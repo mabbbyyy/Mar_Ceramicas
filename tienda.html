@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Mar Cerámicas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script defer src="carrito.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🌊 Mar Cerámicas 🌊</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tienda">
+        <h2>Productos Disponibles</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="imagenes/taza1.jpg" alt="Taza de cerámica">
+                <h3>Taza de cerámica</h3>
+                <p>$4500 ARS</p>
+                <button onclick="agregarAlCarrito('Taza de cerámica', 4500)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/plato1.jpg" alt="Plato decorativo">
+                <h3>Plato decorativo</h3>
+                <p>$6800 ARS</p>
+                <button onclick="agregarAlCarrito('Plato decorativo', 6800)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/vasija1.jpg" alt="Vasija artesanal">
+                <h3>Vasija artesanal</h3>
+                <p>$9500 ARS</p>
+                <button onclick="agregarAlCarrito('Vasija artesanal', 9500)">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="carrito" class="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p id="total">Total: $0</p>
+        <button onclick="finalizarCompra()">Finalizar compra</button>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>Escribinos a <a href="mailto:marceramicas@gmail.com">marceramicas@gmail.com</a> o por WhatsApp.</p>
+        <p><a href="https://www.instagram.com/marceramicas" target="_blank">Instagram @marceramicas</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Mar Cerámicas - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
